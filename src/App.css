@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+.signup-container {
+  display: flex;
+  height: 100vh;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-section {
+  flex: 1 1 25%;
+  background: linear-gradient(135deg, #5a31f4, #6b73ff);
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  border-radius: 0 30px 30px 0;
+}
+
+.left-section h2 {
+  font-size: 2rem;
+  margin-bottom: 600px;
+  text-align: left;
+}
+
+.right-section {
+  flex: 4 4 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+
+.signup-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 20px; /* Increase gap between form inputs */
+}
+
+.form-group input {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Increase gap between email and password inputs */
+}
+
+.create-account-btn {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.create-account-btn:hover {
+  background-color: #333;
+}
+
+.right-section p {
+  margin-top: 10px;
+}
+
+.right-section a {
+  color: #5a31f4;
+  text-decoration: none;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.google-btn,
+.facebook-btn {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-btn {
+  background-color: #000000;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.facebook-btn {
+  background-color: #000000;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.floating-image {
+  position: absolute;
+  top: 60%;
+  right: 70%;
+  width: 35%;
+  transform: translate(50%, -50%);
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo img {
+  max-width: 40px;
+  max-height: 40px;
 }
